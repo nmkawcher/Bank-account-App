@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F8F5F5"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:id="@+id/AccountNameID"
+        android:hint="@string/enter_your_account_name"
+        android:inputType="text"
+
+        android:layout_height="wrap_content"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/UserAgeID"
+            android:hint="@string/enter_your_age"
+            android:inputType="numberDecimal"
+
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/PhoneNumberId"
+            android:hint="@string/enter_your_phone_number"
+            android:inputType="number"
+
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/UserEmailID"
+            android:hint="@string/enter_your_e_mail_address"
+            android:inputType="textEmailAddress"
+
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/user_initialbalance_id"
+            android:hint="@string/enter_initial_balance"
+            android:inputType="numberDecimal"
+
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/AccountTypeRG_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/Savings_RB_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saving_account"/>
+
+        <RadioButton
+            android:id="@+id/CheckingRB_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checking_account"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Finish"
+        android:background="@drawable/button_desgin"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:onClick="OpenNewAccount"/>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Have an Account?"
+        android:layout_gravity="center"
+        android:onClick="gotoLoginActivity"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>

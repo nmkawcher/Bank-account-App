@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Simple BankAccount Apps</string>
+    <string name="enter_your_account_name">Enter your Account Name</string>
+    <string name="enter_your_age">Enter your Age</string>
+    <string name="enter_your_phone_number">Enter your Phone Number</string>
+    <string name="enter_your_e_mail_address">Enter Your E-Mail Address</string>
+    <string name="enter_initial_balance">Enter Initial Balance</string>
+    <string name="saving_account">Saving Account</string>
+    <string name="checking_account">Checking Account</string>
+    <string name="service_charge">Service Charge</string>
+</resources>
